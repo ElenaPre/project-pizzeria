@@ -70,14 +70,15 @@
     }
     initAccordion(){
       const thisProduct=this;
-      
-      const clickableTrigger = document.getElementById(thisProduct.id);
-      console.log("triger",clickableTrigger);
-      // clickableTrigger.addEventListener('click', function(event)){
+      console.log("thisProduct",thisProduct);
+      const clickableTrigger = Array.from(document.querySelectorAll(select.menuProduct.clickable)).pop();
+      console.log("trigger",clickableTrigger);
+      // clickableTrigger.addEventListener('click', function(event){
+      //   event.preventDefault();
 
-      // }
-      
+      // })
 
+      
     }
   }
 

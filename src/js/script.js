@@ -71,12 +71,12 @@
     initAccordion(){
       const thisProduct=this;
       console.log("thisProduct",thisProduct);
-      // const clickableTrigger = document.querySelector(select.menuProduct.);
-      // console.log("trigger",clickableTrigger);
-      // clickableTrigger.addEventListener('click', function(event){
-      //   event.preventDefault();
-
-      // })
+      const clickableTrigger = Array.from(document.querySelectorAll(select.menuProduct.clickable)).pop();
+      console.log("trigger",clickableTrigger);
+      clickableTrigger.addEventListener('click', function(event){
+        event.preventDefault();
+        console.log("hhhh");
+      })
 
       
     }
